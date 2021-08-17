@@ -52,7 +52,8 @@ const Print = {
 
 function performPrint (iframeElement, params) {
   try {
-    iframeElement.focus()
+    // https://github.com/crabbly/Print.js/issues/580#issuecomment-900412269
+    //iframeElement.focus()
 
     // If Edge or IE, try catch with execCommand
     if (Browser.isEdge() || Browser.isIE()) {
